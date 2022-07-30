@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.slider-heading{font-size: 65px;}
+.bg-common{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+.my{
+    background-image: url(images/cover/cover-3.jpg);
+}
+.your{
+    background-image: url(images/cover/grouping.jpg);
+}
+.his{
+    background-image: url(images/cover/civil.jpg);
+}
+.left-icon{
+    justify-content: left;
+    left:-15px;
+}
+.right-icon{
+    justify-content: right;
+    right:-15px;
+}
+.left-icon, .right-icon{
+    width: 3%;
+}
+.my-icon{
+    background-color: blue;
+    border-radius: 50%;
+}
+.social-list{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border-radius: 50%;
+    line-height: 2.2;
+}
+@media screen and (max-width: 576px){
+    .my-display, .my-btn{display: none;}
+    .slider-heading{font-size: 32px;}
+    .my-flex-column{flex-direction: column;}
+    .left-icon, .right-icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .slider-heading{font-size: 43px;}
+    
+}
+@media screen and (max-width: 992px){
+    .right-icon{
+        right:-4px;
+    }
+}
